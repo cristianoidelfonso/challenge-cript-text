@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/responsive/max-759px.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive/media1072px-and-1024px.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/css/responsive/media760px-and-1071px.css"> -->
+    <title>Decodificador de texto</title>
+  </head>
+  <body> 
+    <div class="page-loading">
+      <div id="loader">
+      </div>
+    </div>
+    <div class="grid-container">
+      <header class="item1">
+        <h1 id="" class="title">Codifique e Decodifique seus textos</h1>
+      </header>
+      <div class="menu">
+        Menu
+      </div>
+      <main>
+        <div class="container-left">
+          <div class="aviso">
+            <img id="img-exclamacao" src="./assets/img/exclamacao.png" alt="" />
+            <p>Apenas letras minúsculas e sem acento</p>
+          </div>
+          <form action="">
+            <textarea class="text-input" type="text" name="input-texto" id="input-text" placeholder=" Digite seu texto aqui"></textarea>
+            <div id="container-buttons">
+              <input onclick="code()" type="button" value="Criptografar" id="btn-code" class="btn"></input>
+              <input onclick="decode()" type="button" value="Descriptografar" id="btn-decode" class="btn"></input>
+            </div>
+          </form>
+        </div>
+        <div id="container-right" class="container-right">
+          <div>
+            <div class="aviso">
+              <p>Seu texto criptografado!</p>
+            </div>
+            <textarea id="text-copy" class="text-copy"></textarea>
+          </div>
+          <div>
+            <input type="button" value="Copiar" onclick="copy()" class="btn" id="btn-copy"></input>
+          </div>  
+        </div>
+      </main>
+
+      <div class="right">Right</div>
+      <footer id="footer">
+        <h3>&copy; Desenvolvido por Cristiano Idelfonso</h3>
+        <a target="_blank" href="https://www.linkedin.com/in/cristianoidelfonso/">
+            <img src="./assets/img/logoLinkedin.png" alt="">
+        </a>
+      </footer>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/loader-page.js"></script>
+    <script src="./scripts/typewriter.js"></script>
+    <script src="./scripts/codification.js"></script>
+    <script src="./scripts/decoding.js"></script>
+  </body>
+</html>
